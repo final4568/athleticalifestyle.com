@@ -111,7 +111,7 @@ class athleticalifestyle_Main_Slider extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'athleticalifestyle_main_image',
 				array(
-					'label'       => esc_html__( 'Main Image', 'athleticalifestyle' ),
+					'label'       => esc_html__( 'Background Image', 'athleticalifestyle' ),
 					'type'        => \Elementor\Controls_Manager::MEDIA,
 					'default'     => array(
 						'url' => \Elementor\Utils::get_placeholder_image_src(),
@@ -137,7 +137,7 @@ class athleticalifestyle_Main_Slider extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'athleticalifestyle_title1',
 			array(
-				'label'       => esc_html__( 'First Title', 'athleticalifestyle' ),
+				'label'       => esc_html__( 'White Title', 'athleticalifestyle' ),
 				'type'        => \Elementor\Controls_Manager::TEXT,
 				'placeholder' => esc_html__( 'Enter Text', 'athleticalifestyle' ),
 				'default'     => esc_html__( 'First Title', 'athleticalifestyle' ),
@@ -147,7 +147,7 @@ class athleticalifestyle_Main_Slider extends \Elementor\Widget_Base {
 		$repeater->add_control(
 			'athleticalifestyle_title2',
 			array(
-				'label'       => esc_html__( 'Last Title ', 'athleticalifestyle' ),
+				'label'       => esc_html__( 'Yellow Title ', 'athleticalifestyle' ),
 				'type'        => \Elementor\Controls_Manager::TEXT,
 				'placeholder' => esc_html__( 'Enter  Text', 'athleticalifestyle' ),
 				'default'     => esc_html__( 'Last Title', 'athleticalifestyle' ),

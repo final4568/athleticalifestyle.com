@@ -50,24 +50,24 @@
 	/*Mobile Header*/
 	$('.menu-open-btn').on('click', function () {
 		$('.mobile-header-wrapper').slideToggle();
-		$('body').toggleClass('overflowbody mobile-menu-open');
+		$('body').toggleClass('overflowbody mobile-menus-open');
 		// $('.header-wrapper .header-menu-wrapper .header-menu-colum').addClass('activemenu');
 	});
-	var $opensubmenu = $("<div class='open-submenu-arrow'></div>");
-		$('.mobile-menu ul.menu > li.menu-item-has-children').prepend($opensubmenu);
+		var $opensubmenu = $("<div class='open-submenu-arrow'></div>");
+		$('.mobile-menus ul.menu > li.menu-item-has-children').prepend($opensubmenu);
 
 		var $openchild_submenu = $("<div class='open-chilssubmenu-arrow'></div>");
-		$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').prepend($openchild_submenu);
+		$('.mobile-menus ul.menu > li > .sub-menu > li.menu-item-has-children').prepend($openchild_submenu);
 
 
 
 		$('.open-submenu-arrow').on('click', function () {
 			$(this).siblings(".sub-menu").slideToggle().closest('li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp();
-			$('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').removeClass('is-active')
+			$('.mobile-menus ul.menu > li > .sub-menu > li.menu-item-has-children').removeClass('is-active')
 		});
 
 		$('.open-chilssubmenu-arrow').on('click', function () {
-			$(this).siblings(".sub-menu").slideToggle().closest('.mobile-menu ul.menu > li > .sub-menu > li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
+			$(this).siblings(".sub-menu").slideToggle().closest('.mobile-menus ul.menu > li > .sub-menu > li.menu-item-has-children').toggleClass('is-active').siblings().removeClass("is-active").find(".sub-menu").slideUp()
 		});
 
 		$(".galler-tab-nav .elementor-icon-list-item").first().addClass("active");
@@ -113,6 +113,7 @@
 		autoplay: {
 			delay: 6000,
 		},
+		loop: true,
 		navigation: {
 		  nextEl: ".swiper-button-next",
 		  prevEl: ".swiper-button-prev",
